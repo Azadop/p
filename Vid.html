@@ -1,0 +1,373 @@
+<img style="width: 0px;height: 0px;" src="https://firebasestorage.googleapis.com/v0/b/photo-c218f.appspot.com/o/1.png?alt=media&token=bc8e1717-b29a-459a-b83d-457f8a565607">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>WELCOME TO AV DIGITAL INDIA || AV INDIA ULTD || MOZA</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/icon?family=Material+Icons' rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="theme-color" content="#000">
+<meta name="msapplication-navbutton-color" content="#000">
+<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+</head>
+<style>
+*{
+  margin-left: 0px;
+  font-family: verdana;
+}
+video{
+  background-color: #000;
+}
+.container {
+    position: relative;
+    display: flex;
+    width: max-content;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+.container #video {
+    width: 100%;
+    height: 210px;
+    border-radius: 0px;
+    margin-top: -7px;
+}
+.container .controls {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    opacity: 100;
+    transition: opacity 0.4s;
+}
+.container:hover .controls {
+    opacity: 1;
+}
+.container .controls button {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    color: #fff;
+    font-weight: bolder;
+    text-shadow: 2px 1px 2px #000;
+    border: none;
+    cursor: pointer;
+    background-color: #000;
+    opacity: 50%;
+}
+.container .timeline {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 3px solid #;
+    border-left: 3px solid #;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 100;
+    transition: opacity 0.4s;
+}
+.container .timeline .bar{
+    background: #fff;
+    height: 4px;
+    flex: 1;
+  border-radius: 50px;
+}
+.container .timeline .bar .inner{
+    background: #03AEFF;
+    width: 0%;
+    height: 100%;
+  border-radius: 50px;
+}
+.fa {
+    font-size: 20px !important;
+}
+.container .timeline .VideoTime{
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.container .timeline .CurrentTime{
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.container .WM label{
+  width: 50%;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Barlow Condensed', sans-serif; 
+  opacity: 50;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  transition: opacity 0.4s;
+  text-shadow: 8px 0px 20px #000;
+}
+.Info{
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #fff;
+}
+.Info .Title label{
+  font-size: 18px;
+  font-weight: bold;
+}
+.Info .Subinfo label{
+  font-size: 12px;
+  color: #858585;
+}
+.Info .creator ul{
+  list-style-type: none;
+  margin-left: 0px;
+  margin-top: -24px; 
+} 
+.Info .creator li{
+  display: inline-block;
+  padding-top: -100px;
+}
+.Info .creator img{
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  margin-left: 0px;
+  margin-top: 10px;
+  background-color: #eee;
+}
+.Info .creator ul li label{
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.Info .creator ul li span{
+  font-size: 10px;
+  color: #858585;
+  margin-left: 10px;
+}
+.Info .creator ul li button{
+  border: 0px;
+  border-radius: 10px;
+  background-color: #8505ff;
+  color: #fff;
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  margin-right: -5px;
+}
+.Contain .img img{
+ width: 100%;
+ height: 210px;
+ object-fit: contain;
+}
+.Contain .Title{
+  font-family : verdana;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.Contain .Divider{
+  height: 2px;
+  width: 100%;  
+  margin-top: 5px;
+  background-color: #F1F1F1;
+  margin-bottom: 10px;
+}
+.Contain footer{
+  display: flex;
+  justify-content: ;
+}
+.Contain .profile_pic img{
+  margin-left: 7px;
+  width: 27px;
+  height: 27px;
+  border-radius: 13.5px;
+}
+.Contain .profile_name{
+  margin-top: 8px;
+  margin-right: 7px;
+  margin-left: 7px;
+  font-family : verdana;
+  font-size: 12px;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.CLa{
+  margin: auto;
+  height: 40vh;
+   background-color: #fff;
+}
+.CLb{
+  margin: auto;
+  height: 50vh;
+   background-color: #fff;
+}
+.loader-1 {
+  margin: auto;
+  matgin-top: auto;
+ background-color: #fff;
+  color: #fff;
+  border: 2px solid #fff;
+  border-top: 2px solid #03A9F4;
+  border-radius: 36px;
+	height: 32px;
+	width: 32px;
+	-webkit-animation: loader-1 1s linear infinite;
+	        animation: loader-1-1 1s linear infinite;
+}
+@-webkit-keyframes loader-1-1 {
+	0%   { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes loader-1-1 {
+	0%   { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
+.loader-1 span {
+	display: block;
+	position: absolute;
+	top: 0; left: 0;
+	bottom: 0; right: 0;
+	margin: auto;
+	height: 32px;
+	width: 32px;
+	clip: rect(0, 32px, 32px, 16px);
+	-webkit-animation: loader-1-2 1.2s linear infinite;
+	        animation: loader-1-2 1.2s linear infinite;
+}
+</style>
+
+<body onload="Call_Data()">
+<!--
+Exop000000000000.2729826(m)
+ehehwcqkseqyka646or27wr6t7ps1uywrt1q7fuad1prw6t725926t725p1tupsd6oarueqptwirw7iyw6f6rs7eq8t6f81w1wt17rwi4t1ptw719sfo1wr7pwfo15titpz2eurydw69ryyd1ydk1sfyf1sxg1ddyoyis55i332gxj1y7t1y1tsyitutksq7tydecge16odeyk17ptyfk1e6r2e16or1ehlx69r1ufoe16od37o16o3e6ir707e1o6o16oee6eetisgd6r3636eyorhryo6edlyoe6o2i5vmykwteo6evdjti4i3i5528254yo48dtidyk5i7iqrejftu7eyoeiuegeuteyorouhry7i6odyeysisyyo63632536tww58632eoe69eks6iw48rl63ktwi5i4i5ogwwtwo6.data
+-->
+    <div class="container">
+      <div class="WM"> <label>MOZA PLAY</label></div>
+        <video src="https://firebasestorage.googleapis.com/v0/b/moza-video-cfe4b.appspot.com/o/1.mp4?alt=media&token=804f7834-d0b8-4585-a466-98e704fe0d70" id="video"></video>
+        <div class="controls">
+            <button onclick="rewind(event)"><i class="material-icons md-25">arrow_back_ios</i></button>
+                      <button onclick="play(event)"><i class="fa fa-play"></i><i class="fa fa-pause"></i></button>
+                      <button onclick="forward(event)"><i class="material-icons md-25">arrow_forward_ios</i></button>
+          <!--<button onclick="fullScreen(event)"><i class="fa fa-expand"></i></button>-->
+        </div>
+      
+            <div class="timeline"><div class="VideoTime"><label id="VT">00:00</label></div>
+                <div class="bar">
+                    <div class="inner">
+                </div>
+            </div><div class="CurrentTime"><label id="CT">00:00</label></div>
+          <!--<button onclick="download(event)"><i class="fa fa-cloud-download"></i></button>-->
+        </div>
+    </div>
+<script src="https://azadop.github.io/p/mainvideocontrol.js"></script>
+<div class="Info">
+  <div class="Title"><label>WELCOME TO AV DIGITAL INDIA || AV INDIA ULTD || MOZA</label>
+    <!-- Not Important
+  </div>
+  <div class="Subinfo">
+    <label>72 views 6 months ago more...</label>
+  </div>-->
+  <div class="creator"><img src="https://firebasestorage.googleapis.com/v0/b/moza-post.appspot.com/o/8851772685A.png?alt=media&token=5e8c6f5e-5101-4dfe-be5a-7f0e137fd177"><ul><li><label>Crazy Creator</label></li><!-- Not Important<li><span>1</span></li><li><p style="color: #fff;margin-right: 100px;">jweo</p></li><li><button>Follow</button></li>--></ul></div>
+</div>
+  <div class="Akeb" style="margin-top: 15px;width: 100%;text-align: center;height: 60px;background-color: #f8f9ff;border-radius: 20px;padding-top: 5px;"> <a href="./MozaDownload"> <p style="margin-top: 15px;margin-left: 5px;font-family: 'Barlow Condensed', sans-serif; color: #8505ff;"> * To Enjoy this with more feature Download The App Now!</p></a>
+  </div>
+  
+  <div class="CON_LIST" id="WJ22HUS">
+    <!-- {CALL_DATA_[M]}(M){CALL_DATA_EXOP0000}{.1}@8282283663920229929KWJ92_NULL -->
+    <!-- {CALL_DATA_[M]}(M){CALL_DATA_EXOP0000}{.1}@828WII3663920229929KWJ92_NULL -->
+    <!-- {CALL_DATA_[M]}(M){CALL_DATA_EXOP0000}{.1}@8282283663920W29KWJ92_NULL -->
+    <!-- {CALL_DATA_[M]}(M){CALL_DATA_EXOP0000}{.1}@82822836639WIW9929KWJ92_NULL -->
+    <!-- {CALL_DATA_[M]}(M){CALL_DATA_EXOP0000}{.1}@8282283663928289929KWJ92_NULL -->
+  </div>
+  <div class="CLa" id="CL"></div>
+  <div class="CLb" id="CL0">
+    <div class="loader-1 center" id="CL1">
+      <span id="CL2"></span>
+    </div></div>
+    
+  <p style="margin-left: 5px;font-family: 'Barlow Condensed', sans-serif; "> * To Enjoy this with more feature Download The App <a href="./MozaDownload">here</a>
+</p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+ <script>
+// Initialize Firebase
+var config = {
+  apiKey: "AIzaSyBjMWFjGpr04xzmQN9y5LlPGLe2NeI5GnY",
+  authDomain: "moza-c42fb.firebaseapp.com",
+  databaseURL: "https://moza-c42fb-default-rtdb.firebaseio.com/",
+  projectId: "moza-c42fb",
+  storageBucket: "moza-c42fb.appspot.com",
+  messagingSenderId: "256429602324"
+};
+firebase.initializeApp(config);
+
+var db = firebase.database();
+
+function Call_Data() {
+db.ref('Moza/MCC/Video/').once('value', function(snapshot){
+        if(snapshot.exists()){
+ snapshot.forEach(function(childSnapshot){
+                var val = childSnapshot.val();
+                var key = childSnapshot.key;
+   var Poster = String((val.Poster));
+   var Title = (val.Title);
+   var VideoNumber = (childSnapshot.child('Video Number').val());
+   var ProfilePicture = (childSnapshot.child('Profile Picture').val());
+   var ProfileName = (childSnapshot.child('Profile Name').val());
+Poster = Poster.replaceAll('\\' , "");
+Poster = Poster.replace(/'/ , "");
+Poster = Poster.replace(/"/ , "");
+ProfilePicture = ProfilePicture.replaceAll('\\' , "");
+ProfilePicture = ProfilePicture.replace(/'/ , "");
+ProfilePicture = ProfilePicture.replace(/"/ , "");
+VideoNumber = VideoNumber.replace(/"/ , "");
+VideoNumber = VideoNumber.replace(/'/ , "");
+Title = Title.replace(/'/ , "");
+Title = Title.replace(/'/ , "");
+ProfileName = ProfileName.replace(/'/ , "");
+ProfileName = ProfileName.replace(/"/ , "");
+ProfileName = ProfileName.replace(/'/ , "");
+ProfileName = ProfileName.replace(/"/ , "");
+
+document.getElementById("CL").style.height = '0px';
+document.getElementById("CL").style.width = '0px';
+document.getElementById("CL0").style.height = '0px';
+document.getElementById("CL0").style.width = '0px';
+document.getElementById("CL1").style.height = '0px';
+document.getElementById("CL1").style.width = '0px';
+document.getElementById("CL1").style.border = '0px';
+document.getElementById("CL2").style.height = '0px';
+document.getElementById("CL2").style.width = '0px';
+if(VideoNumber == "1") {}
+  else{
+document.getElementById("WJ22HUS").innerHTML += '<a href="./' + VideoNumber + '">' + '<div class="Contain">' + '<div class="img">' + '<img src="' + Poster + '">' + '</div>' + '<div class="Title">' + '<label>' + Title + '</label>' + '</div>' + '<footer><div class="profile_pic"><img src="' +  ProfilePicture + '"></div><div class="profile_name"><label>' + ProfileName + '</label></div></footer>' + '<div class="Divider"></div>' + '</div>' + '</a>';
+  }
+          });
+        }
+   }); 
+}
+</script>
+
+</html>
